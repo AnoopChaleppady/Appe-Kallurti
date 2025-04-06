@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appe Agni Kallurti Temple Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e2c275;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .btn {
+      display: inline-block;
+      background-color: #d39e00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .qr {
+      width: 200px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    nav {
+      text-align: center;
+      padding: 10px;
+      background: #fff6e5;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #a06b00;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .countdown {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d39e00;
+      margin-top: 10px;
+    }
+    .whatsapp-share {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Appe Agni Kallurti Temple Construction</h1>
+    <p>Join our lucky draw or donate to help build the temple</p>
+  </header>
+
+  <nav>
+    <a href="#tickets">Buy Tickets</a>
+    <a href="#donate">Donate</a>
+    <a href="#updates">Updates</a>
+    <a href="#trust">Trust Details</a>
+  </nav>
+
+  <main>
+    <div class="section" id="tickets">
+      <h2>Buy Lucky Draw Tickets</h2>
+      <p>Each ticket is ₹50. You’ll receive your ticket number via WhatsApp after payment.</p>
+      <p><strong>Prizes Include:</strong><br>
+      1st Prize – ₹25,000<br>
+      2nd Prize – ₹10,000<br>
+      3rd Prize – ₹5,000<br>
+      Plus 5 Attractive Gifts: Mixer Grinder, Smartwatch, Bluetooth Speaker, Table Fan, Travel Bag</p>
+      <p><strong>Step 1:</strong> Scan and pay ₹50 per ticket using UPI QR below</p>
+      <img src="qr-code.png" alt="Pay using UPI" class="qr">
+      <p><strong>UPI ID:</strong> trustname@upi</p>
+      <p><strong>Step 2:</strong> Fill the booking form with your details and payment screenshot</p>
+      <a href="https://forms.gle/your-google-form-link" class="btn">Buy Tickets</a>
+      <div class="countdown" id="countdown"></div>
+      <div class="whatsapp-share">
+        <a href="https://wa.me/?text=Support%20our%20temple%20construction%20by%20buying%20a%20lucky%20draw%20ticket!%20Visit:%20https://your-website-link" class="btn">Share on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="section" id="donate">
+      <h2>Make a Donation</h2>
+      <p>You can donate any amount. Every rupee helps us get closer to completing the temple.</p>
+      <img src="qr-code.png" alt="Donate QR Code" class="qr">
+      <p><strong>UPI ID:</strong> trustname@upi</p>
+    </div>
+
+    <div class="section" id="updates">
+      <h2>Construction Updates & Photo Gallery</h2>
+      <p>We’ll keep this page updated with photos and progress as the temple construction continues. Thank you for your blessings and support!</p>
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Temple Construction 1">
+        <img src="photo2.jpg" alt="Temple Construction 2">
+        <img src="photo3.jpg" alt="Temple Construction 3">
+      </div>
+    </div>
+
+    <div class="section" id="trust">
+      <h2>Trust Details</h2>
+      <p><strong>Trust Name:</strong> Vishwakarma Akkasali Samudaya Seva Trust(R)</p>
+      <p><strong>Registration No:</strong> SLY 4-0074/2023-24</p>
+      <p><strong>Temple Location:</strong> Charmanakadu Chanthala, Kollamogru, Sullia Taluk, D.K, Karnataka 574218</p>
+
+      <h3>Trust Members:</h3>
+      <ul>
+        <li>Madhava K – President</li>
+        <li>Rakesh K – Secretary</li>
+        <li>Nikhil CH – Cashier</li>
+        <li>Anoop Chaleppadi</li>
+        <li>Pramod CM</li>
+        <li>Ranjitha K</li>
+        <li>K. Chidanandha</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    Contact: +91 8762793025 | +91 8762783548 | +91 9482317453<br>
+    Email: support@temple.org
+  </footer>
+
+  <script>
+    const drawDate = new Date("June 30, 2025 00:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = drawDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.innerHTML = `Draw in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        clearInterval(x);
+        countdownEl.innerHTML = "Draw Completed!";
+      }
+    }
+
+    const x = setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
