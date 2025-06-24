@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Appe Agni Kallurti Temple Construction</title>
+  <meta name="description" content="Support the construction of Appe Agni Kallurti Temple by donating. See lucky draw results and construction updates." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -65,6 +67,11 @@
       font-weight: bold;
       color: #a06b00;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .gallery img {
       width: 100%;
       max-width: 250px;
@@ -72,55 +79,96 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .countdown {
-      font-size: 24px;
-      font-weight: bold;
-      color: #d39e00;
-      margin-top: 10px;
+    .results {
+      font-size: 18px;
+      line-height: 1.6;
     }
-    .whatsapp-share {
-      margin-top: 20px;
+    .progress-container {
+      margin-top: 15px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 20px;
+      background-color: #d39e00;
+      width: 60%;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .language-select {
+      text-align: right;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="language-select">
+      <label for="language">Language:</label>
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="kn">Kannada</option>
+        <option value="tu">Tulu</option>
+        <option value="ml">Malayalam</option>
+      </select>
+    </div>
     <h1>Appe Agni Kallurti Temple Construction</h1>
-    <p>Join our lucky draw or donate to help build the temple</p>
+    <p>Your donations help build our temple. Thank you!</p>
   </header>
 
   <nav>
-    <a href="#tickets">Buy Tickets</a>
     <a href="#donate">Donate</a>
+    <a href="#results">Lucky Draw Result</a>
+    <a href="#video">Videos</a>
     <a href="#updates">Updates</a>
     <a href="#trust">Trust Details</a>
   </nav>
 
   <main>
-    <div class="section" id="tickets">
-      <h2>Buy Lucky Draw Tickets</h2>
-      <p>Each ticket is ₹50. You’ll receive your ticket number via WhatsApp after payment.</p>
-      <p><strong>Prizes Include:</strong><br>
-      1st Prize – ₹25,000<br>
-      2nd Prize – ₹10,000<br>
-      3rd Prize – ₹5,000<br>
-      Plus 5 Attractive Gifts: Mixer Grinder, Smartwatch, Bluetooth Speaker, Table Fan, Travel Bag</p>
-      <p><strong>Step 1:</strong> Scan and pay ₹50 per ticket using UPI QR below</p>
-      <img src="GooglePay_QR.png" alt="Pay using UPI" class="qr">
-      <p><strong>UPI ID:</strong> anooanoopc-2@okhdfcbank</p>
-      <p><strong>Step 2:</strong> Fill the booking form with your details and payment screenshot</p>
-      <a href="https://forms.gle/your-google-form-link" class="btn">Buy Tickets</a>
-      <div class="countdown" id="countdown"></div>
-      <div class="whatsapp-share">
-        <a href="https://wa.me/?text=Support%20our%20temple%20construction%20by%20buying%20a%20lucky%20draw%20ticket!%20Visit:%20https://your-website-link" class="btn">Share on WhatsApp</a>
-      </div>
-    </div>
-
     <div class="section" id="donate">
       <h2>Make a Donation</h2>
       <p>You can donate any amount. Every rupee helps us get closer to completing the temple.</p>
-      <img src="GooglePay_QR.png" alt="Donate QR Code" class="qr">
+      <img src="GooglePay_QR.png" alt="UPI QR for donation" class="qr">
       <p><strong>UPI ID:</strong> anooanoopc-2@okhdfcbank</p>
+      <div class="progress-container">
+        <div class="progress-bar">60% of ₹10,00,000 Goal</div>
+      </div>
+      <div style="margin-top: 20px;">
+        <a href="https://wa.me/918762793025?text=Support%20Appe%20Agni%20Kallurti%20Temple%20construction%20by%20donating.%20Every%20rupee%20counts!%20Scan%20the%20QR%20and%20pay%20to%20UPI%3A%20anooanoopc-2%40okhdfcbank" class="btn">Share on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="section" id="results">
+      <h2>Lucky Draw Result</h2>
+      <div class="results">
+        <p><strong>VISHWAKARMA AKKASALI SAMUDAYA SEVA TRUST (R.)<br>
+        Kollamogru, Sullia Tq | D.K</strong></p>
+        <p>🎉 <strong>LUCKY COUPON RESULT</strong> 🎉<br>Date: 01/06/2025</p>
+        <p>🏆 <strong>Prize Details</strong><br>
+          🥇 1st Prize: 4387<br>
+          🥈 2nd Prize: 4704<br>
+          🥉 3rd Prize: 1820
+        </p>
+        <p>🌟 <strong>Attractive Prizes</strong><br>
+          1609<br>
+          1345<br>
+          4720<br>
+          5444<br>
+          5795
+        </p>
+        <p>Contact: 8762783548, 8088272651<br>Thank you for your participation!</p>
+      </div>
+    </div>
+
+    <div class="section" id="video">
+      <h2>Temple Blessings & Bhoomi Pooja</h2>
+      <p>Watch videos of our temple rituals and blessings.</p>
+      <div style="text-align:center">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Temple Bhoomi Pooja" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
 
     <div class="section" id="updates">
@@ -138,7 +186,6 @@
       <p><strong>Trust Name:</strong> Vishwakarma Akkasali Samudaya Seva Trust(R)</p>
       <p><strong>Registration No:</strong> SLY 4-0074/2023-24</p>
       <p><strong>Temple Location:</strong> Charmanakadu Chanthala, Kollamogru, Sullia Taluk, D.K, Karnataka 574218</p>
-
       <h3>Trust Members:</h3>
       <ul>
         <li>Madhava K – President</li>
@@ -158,27 +205,9 @@
   </footer>
 
   <script>
-    const drawDate = new Date("June 30, 2025 00:00:00").getTime();
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = drawDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.innerHTML = `Draw in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      if (distance < 0) {
-        clearInterval(x);
-        countdownEl.innerHTML = "Draw Completed!";
-      }
+    function changeLanguage(lang) {
+      alert('Language change functionality for Kannada, Tulu, and Malayalam coming soon.');
     }
-
-    const x = setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
