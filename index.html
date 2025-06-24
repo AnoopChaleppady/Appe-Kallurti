@@ -129,6 +129,23 @@ nav a.active {
         max-width: none;
       }
     }
+    .video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
   </style>
 </head>
 <body>
@@ -192,13 +209,10 @@ nav a.active {
       </div>
     </div>
 
-    <div class="section" id="video">
-      <h2>Temple Blessings & Pooja</h2>
-      <p>Watch videos of our temple rituals and blessings.</p>
-      <div style="text-align:center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/T738uVGFR4Q?si=gqF4aLo_39lmtdEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
+  <div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T738uVGFR4Q?si=gqF4aLo_39lmtdEW" ... ></iframe>
+  </div>
+
 
     <div class="section" id="updates">
       <h2>Construction Updates & Photo Gallery</h2>
